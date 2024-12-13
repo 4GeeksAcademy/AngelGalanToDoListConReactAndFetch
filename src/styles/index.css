@@ -1,12 +1,123 @@
+/* Estilo general */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f9f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
 
-/* 
+/* Contenedor principal */
+.container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    text-align: center;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+/* Título */
+h1 {
+    font-size: 22px;
+    color: #28a745;
+    margin-bottom: 20px;
+}
 
-*/
+/* Campo de entrada */
+.task-input {
+    border: 1px solid #c4d8d5;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 14px;
+    color: #4d7069;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.task-input::placeholder {
+    color: #9eb7b3;
+    font-style: italic;
+}
+
+/* Lista de tareas */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #e3ebe9;
+    border-radius: 8px;
+    min-height: 60px;
+    background-color: #f8fdfb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #4d7069;
+    border-bottom: 1px solid #e3ebe9;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+li span {
+    flex: 1;
+    text-align: left;
+}
+
+/* Botón de eliminar tarea */
+.remove-item-btn {
+    background-color: transparent;
+    border: none;
+    color: #e63946;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.remove-item-btn:hover {
+    color: #c9002b;
+}
+
+/* Botón de borrar todas las tareas */
+.btn-danger {
+    margin-top: 20px;
+    background-color: #6db09b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-danger:hover {
+    background-color: #4d7069;
+}
+
+/* Contador de tareas */
+p {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #9eb7b3;
+}
+
+
+
+
