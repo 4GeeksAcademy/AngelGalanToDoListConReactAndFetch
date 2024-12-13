@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const TaskList = () => {
+const TodoList = () => {
   const [tasks, setTasks] = useState([]);
 
   const createUser = async () => {
@@ -118,7 +118,8 @@ const TaskList = () => {
   );
 };
 
-export default TaskList;
+export default TodoList;
+
 
 
 
